@@ -43,10 +43,9 @@ namesList();
 // Ejemplo entrada: [23, 78, 45]
 // Ejemplo salida: Total: 146
 
-const sumPrices = () => {
-  const prices = [23, 78, 45];
+const sumPrices = prices => {
   for (let i = 0; i < prices.length; i++) {
-    console.log();
+    addition = console.log(addition);
   }
 };
-sumPrices();
+sumPrices([23, 78, 45]);
