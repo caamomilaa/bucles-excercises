@@ -43,9 +43,47 @@ namesList();
 // Ejemplo entrada: [23, 78, 45]
 // Ejemplo salida: Total: 146
 
-const sumPrices = prices => {
+const sumPrices = () => {
+  const prices = [23, 78, 45];
+  let startAddition = 0;
   for (let i = 0; i < prices.length; i++) {
-    addition = console.log(addition);
+    startAddition = startAddition + prices[i];
   }
+  console.log(startAddition);
 };
-sumPrices([23, 78, 45]);
+sumPrices();
+
+// 3️⃣ Macarena quiere generar tres códigos de seguridad y almacenarlos en un array. Cada código debe ser un número aleatorio entre 1000 y 9999. Usa un bucle for para generar los códigos y luego mostrarlos.
+// Ejemplo salida: [4356, 7890, 1234]
+
+const generatePassword = emptyArray => {
+  // const fisrtPassword = '';
+  // const secondPassword = '';
+  // const thirdPassword = '';
+
+  for (let i = 0; i < 3; i++) {
+    const randomNumber = Math.floor(Math.random() * (9999 - 1000) + 1000);
+    emptyArray.push(randomNumber);
+  }
+  console.log(emptyArray);
+};
+generatePassword([]);
+
+// 4️⃣ Abby encontró una lista de suministros en un refugio: ['Agua', 'Munición', 'Botiquín', 'Czst']. Debe comprobar si todos los elementos contienen al menos una vocal.
+// Ejemplo salida:
+// Agua contiene vocales.
+// Munición contiene vocales.
+// Botiquín contiene vocales.
+// Czst no contiene vocales.
+const containsVowels = list => {
+  const vowels = 'aeiouAEIOU';
+  for (let i = 0; i < list.length; i++) {
+    if (list.includes(vowels)) {
+      console.log('si');
+    } else {
+      console.log('no');
+    }
+  }
+  //alreves vowels
+};
+containsVowels(['Agua', 'Munición', 'Botiquín', 'Czst']);
